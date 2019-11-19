@@ -1,0 +1,325 @@
+/*
+
+Vivado v2013.4 (64-bit)
+SW Build 353583 on Mon Dec  9 17:49:19 MST 2013
+Process ID: 6264
+
+Current time: 	4/16/18 7:26:40 PM
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Windows 7
+Version: 6.1
+Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1280x1024
+Screen resolution (DPI): 96
+Available screens: 1
+
+Java version: 	1.7.0_40 64-bit
+Java home: 	C:/Xilinx/Vivado/2013.4/tps/win64/jre
+
+User name: 	ceg3430
+User directory: D:/Profiles/Administrator/Desktop/v2/3430 project v2/v2/project_1
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+GUI Allocated memory:	156 mb
+GUI Max memory:		3,066 mb
+Engine Allocated memory: 523 mb
+
+*/
+
+// TclEventType: START_GUI
+// TclEventType: START_PROGRESS_DIALOG
+// cb:I (bT:JFrame):  Opening project 'D:\Profiles\Administrator\Desktop\v2\3430 project v2\v2\project_1\project_1.xpr' : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 61 mb (+62005kb) [00:00:15]
+// [Engine Memory]: 493 mb (+365464kb) [00:00:15]
+// [GUI Memory]: 64 mb (+3088kb) [00:00:16]
+// [Engine Memory]: 511 mb (+19283kb) [00:00:16]
+// [GUI Memory]: 69 mb (+5087kb) [00:00:16]
+// [GUI Memory]: 96 mb (+28269kb) [00:00:17]
+// [Engine Memory]: 519 mb (+7704kb) [00:00:17]
+// [GUI Memory]: 101 mb (+4841kb) [00:00:17]
+// [Engine Memory]: 519 mb (+696kb) [00:00:18]
+// [GUI Memory]: 104 mb (+2937kb) [00:00:18]
+// [GUI Memory]: 108 mb (+4152kb) [00:00:18]
+// [Engine Memory]: 523 mb (+3342kb) [00:00:18]
+// [Engine Memory]: 523 mb (+614kb) [00:00:18]
+// Tcl Message: open_project {D:\Profiles\Administrator\Desktop\v2\3430 project v2\v2\project_1\project_1.xpr} 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'D:/Profiles/Administrator/Desktop/v2/project_1' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// HMemoryUtils.trashcanNow. Current time: 4/16/18 7:26:40 PM
+// Tcl Message: open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:05 . Memory (MB): peak = 856.836 ; gain = 76.980 
+// TclEventType: STOP_PROGRESS_DIALOG
+// [Engine Memory]: 523 mb (+172kb) [00:00:20]
+dismissDialog ("Opening project 'D:\\Profiles\\Administrator\\Desktop\\v2\\3430 project v2\\v2\\project_1\\project_1.xpr'"); // cb:I (bT:JFrame)
+// TclEventType: STOP_PROGRESS_DIALOG
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// [Engine Memory]: 529 mb (+5472kb) [00:00:21]
+selectTree (PAResourceAtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 23); // w:Q (v:u, bT:JFrame)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// [Engine Memory]: 533 mb (+4804kb) [00:00:25]
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream 
+// Tcl Message: [Mon Apr 16 19:26:46 2018] Launched synth_1... Run output will be captured here: D:/Profiles/Administrator/Desktop/v2/3430 project v2/v2/project_1/project_1.runs/synth_1/runme.log [Mon Apr 16 19:26:46 2018] Launched impl_1... Run output will be captured here: D:/Profiles/Administrator/Desktop/v2/3430 project v2/v2/project_1/project_1.runs/impl_1/runme.log 
+// cb:I (bT:JFrame):  Generate Bitstream : addNotify
+dismissDialog ("Generate Bitstream"); // cb:I (bT:JFrame)
+// [Engine Memory]: 536 mb (+2502kb) [00:00:30]
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// O:af (bT:JFrame): Bitstream Generation Completed: addNotify
+// Elapsed time: 102 seconds
+selectButton (RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, O:af)
+dismissDialog ("Bitstream Generation Completed"); // O:af (bT:JFrame)
+// [Engine Memory]: 539 mb (+3657kb) [00:02:09]
+selectTree (PAResourceAtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 24); // w:Q (v:u, bT:JFrame)
+// TclEventType: LOAD_FEATURE
+// TclEventType: HW_SESSION_OPEN
+// [Engine Memory]: 539 mb (+200kb) [00:02:10]
+// [GUI Memory]: 110 mb (+3006kb) [00:02:10]
+// [Engine Memory]: 540 mb (+864kb) [00:02:10]
+// Tcl Message: open_hw 
+// [Engine Memory]: 544 mb (+4517kb) [00:02:11]
+selectTree (PAResourceAtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Hardware Manager, Open Target]", 25); // w:Q (v:u, bT:JFrame)
+// HMemoryUtils.trashcanNow. Current time: 4/16/18 7:28:33 PM
+selectMenuItem ((HResource) null, "localhost:60001,xilinx_tcf/Digilent/210248657233"); // ah:JMenuItem (al:JPopupMenu, bT:JFrame)
+// cb:I (bT:JFrame):  Open Hardware Target : addNotify
+// Tcl Message: connect_hw_server -host localhost -port 60001 
+// Tcl Message: INFO: [Xicom 50-2] Connecting to hw_server... 
+// Tcl Message: INFO: [Xicom 50-1] Attempting to launch hw_server... 
+// [Engine Memory]: 550 mb (+6438kb) [00:02:14]
+// Tcl Message: INFO: [#UNDEF]  ****** Xilinx hw_server v2013.4   **** Build date : Dec  9 2013-17:47:52     ** Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.  INFO: hw_server application started INFO: Use Ctrl-C to exit hw_server application  
+// Tcl Message: INFO: [Labtools 27-109] Started Vivado Cse Server instance on port: 60001 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-147] vcse_server: Connecting to hw_server... INFO: [Labtools 27-147] vcse_server: Connection established. INFO: [Labtools 27-147] vcse_server: Connecting to hw_server... INFO: [Labtools 27-147] vcse_server: Connection established. 
+// Tcl Message: connect_hw_server: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 870.285 ; gain = 6.605 
+// Tcl Message: current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210248657233] 
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtools 27-147] vcse_server: Connecting to hw_server... INFO: [Labtools 27-147] vcse_server: Connection established. 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {D:/Profiles/Administrator/Desktop/v2/3430 project v2/v2/project_1/project_1.runs/impl_1/v1.bit} [lindex [get_hw_devices] 1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {D:/Profiles/Administrator/Desktop/v2/3430 project v2/v2/project_1/project_1.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices] 1] 
+// Tcl Message: current_hw_device [lindex [get_hw_devices] 1] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_DEVICE_UPDATE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 1] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it. 
+// [Engine Memory]: 551 mb (+61kb) [00:02:19]
+dismissDialog ("Open Hardware Target"); // cb:I (bT:JFrame)
+selectTree (PAResourceAtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Hardware Manager, Program Device]", 26); // w:Q (v:u, bT:JFrame)
+// [Engine Memory]: 552 mb (+1265kb) [00:02:20]
+selectMenuItem ((HResource) null, "xc7z020_1"); // ah:JMenuItem (al:JPopupMenu, bT:JFrame)
+// [Engine Memory]: 553 mb (+1761kb) [00:02:21]
+// ap:a (bT:JFrame): Program Device: addNotify
+selectButton (RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, ap:a)
+// cb:I (bT:JFrame):  Program Device : addNotify
+dismissDialog ("Program Device"); // ap:a (bT:JFrame)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {D:/Profiles/Administrator/Desktop/v2/3430 project v2/v2/project_1/project_1.runs/impl_1/v1.bit} [lindex [get_hw_devices] 1] 
+// Tcl Message: program_hw_devices [lindex [get_hw_devices] 1] 
+// Tcl Message: INFO: [Labtools 27-2154] Reading 4045647 bytes from file D:/Profiles/Administrator/Desktop/v2/3430 project v2/v2/project_1/project_1.runs/impl_1/v1.bit... 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-32] Done pin status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices] 1] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it. 
+// [Engine Memory]: 665 mb (+117342kb) [00:02:28]
+// 'k' command handler elapsed time: 6 seconds
+dismissDialog ("Program Device"); // cb:I (bT:JFrame)
+// Elapsed time: 115 seconds
+selectTree (PAResourceAtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0); // w:Q (v:u, bT:JFrame)
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, v1 - Behavioral (v2.vhd)]", 1); // o:f (u:JPanel, bT:JFrame)
+selectTree (PAResourceAtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, v1 - Behavioral (v2.vhd)]", 1, false, false, false, false, true); // o:f (u:JPanel, bT:JFrame) - DOUBLE CLICK
+// Elapsed time: 57 seconds
+selectCodeEditor ("v2.vhd", 418, 315); // aR:G (JPanel:JComponent, bT:JFrame)
+// [GUI Memory]: 119 mb (+8847kb) [00:05:41]
+// Elapsed time: 144 seconds
+selectCodeEditor ("v2.vhd", 263, 449); // aR:G (JPanel:JComponent, bT:JFrame)
+selectCodeEditor ("v2.vhd", 213, 381); // aR:G (JPanel:JComponent, bT:JFrame)
+selectCodeEditor ("v2.vhd", 213, 381, false, false, false, false, true); // aR:G (JPanel:JComponent, bT:JFrame) - DOUBLE CLICK
+// Elapsed time: 10 seconds
+selectCodeEditor ("v2.vhd", 424, 329); // aR:G (JPanel:JComponent, bT:JFrame)
+selectCodeEditor ("v2.vhd", 295, 320); // aR:G (JPanel:JComponent, bT:JFrame)
+// [GUI Memory]: 119 mb (+30kb) [00:08:05]
+// Elapsed time: 32 seconds
+selectCodeEditor ("v2.vhd", 127, 333); // aR:G (JPanel:JComponent, bT:JFrame)
+selectCodeEditor ("v2.vhd", 133, 369); // aR:G (JPanel:JComponent, bT:JFrame)
+selectCodeEditor ("v2.vhd", 196, 385); // aR:G (JPanel:JComponent, bT:JFrame)
+selectCodeEditor ("v2.vhd", 192, 401); // aR:G (JPanel:JComponent, bT:JFrame)
+selectCodeEditor ("v2.vhd", 218, 443); // aR:G (JPanel:JComponent, bT:JFrame)
+selectCodeEditor ("v2.vhd", 188, 454); // aR:G (JPanel:JComponent, bT:JFrame)
+selectCodeEditor ("v2.vhd", 53, 466); // aR:G (JPanel:JComponent, bT:JFrame)
+selectCodeEditor ("v2.vhd", 147, 480); // aR:G (JPanel:JComponent, bT:JFrame)
+// Elapsed time: 28 seconds
+selectCodeEditor ("v2.vhd", 287, 161); // aR:G (JPanel:JComponent, bT:JFrame)
+selectCodeEditor ("v2.vhd", 26, 199); // aR:G (JPanel:JComponent, bT:JFrame)
+selectCodeEditor ("v2.vhd", 443, 324); // aR:G (JPanel:JComponent, bT:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 56 seconds
+selectCodeEditor ("v2.vhd", 138, 283); // aR:G (JPanel:JComponent, bT:JFrame)
+selectCodeEditor ("v2.vhd", 57, 296); // aR:G (JPanel:JComponent, bT:JFrame)
+selectCodeEditor ("v2.vhd", 154, 279); // aR:G (JPanel:JComponent, bT:JFrame)
+selectCodeEditor ("v2.vhd", 27, 304); // aR:G (JPanel:JComponent, bT:JFrame)
+selectCodeEditor ("v2.vhd", 173, 318); // aR:G (JPanel:JComponent, bT:JFrame)
+selectCodeEditor ("v2.vhd", 46, 304); // aR:G (JPanel:JComponent, bT:JFrame)
+selectCodeEditor ("v2.vhd", 191, 318); // aR:G (JPanel:JComponent, bT:JFrame)
+// Elapsed time: 17 seconds
+selectCodeEditor ("v2.vhd", 53, 316); // aR:G (JPanel:JComponent, bT:JFrame)
+selectCodeEditor ("v2.vhd", 144, 327); // aR:G (JPanel:JComponent, bT:JFrame)
+selectCodeEditor ("v2.vhd", 146, 327, false, false, false, false, true); // aR:G (JPanel:JComponent, bT:JFrame) - DOUBLE CLICK
+selectCodeEditor ("v2.vhd", 144, 328); // aR:G (JPanel:JComponent, bT:JFrame)
+selectCodeEditor ("v2.vhd", 212, 301); // aR:G (JPanel:JComponent, bT:JFrame)
+// Elapsed time: 20 seconds
+selectCodeEditor ("v2.vhd", 169, 267); // aR:G (JPanel:JComponent, bT:JFrame)
+selectCodeEditor ("v2.vhd", 168, 278); // aR:G (JPanel:JComponent, bT:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTree (PAResourceAtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Hardware Manager, Program Device]", 26); // w:Q (v:u, bT:JFrame)
+// [GUI Memory]: 123 mb (+4163kb) [00:11:40]
+selectMenuItem ((HResource) null, "xc7z020_1"); // ah:JMenuItem (al:JPopupMenu, bT:JFrame)
+// ap:a (bT:JFrame): Program Device: addNotify
+selectButton (RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, ap:a)
+// cb:I (bT:JFrame):  Program Device : addNotify
+dismissDialog ("Program Device"); // ap:a (bT:JFrame)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {D:/Profiles/Administrator/Desktop/v2/3430 project v2/v2/project_1/project_1.runs/impl_1/v1.bit} [lindex [get_hw_devices] 1] 
+// Tcl Message: program_hw_devices [lindex [get_hw_devices] 1] 
+// Tcl Message: INFO: [Labtools 27-2154] Reading 4045647 bytes from file D:/Profiles/Administrator/Desktop/v2/3430 project v2/v2/project_1/project_1.runs/impl_1/v1.bit... 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-32] Done pin status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices] 1] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it. 
+// 'k' command handler elapsed time: 5 seconds
+dismissDialog ("Program Device"); // cb:I (bT:JFrame)
+selectTree (PAResourceAtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 15); // w:Q (v:u, bT:JFrame)
+// af:bw (bT:JFrame): Run Synthesis: addNotify
+selectButton (RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, af:bw)
+// cb:I (bT:JFrame):  Resetting Runs : addNotify
+dismissDialog ("Run Synthesis"); // af:bw (bT:JFrame)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// cb:I (bT:JFrame):  Starting Design runs : addNotify
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 
+// Tcl Message: [Mon Apr 16 19:38:15 2018] Launched synth_1... Run output will be captured here: D:/Profiles/Administrator/Desktop/v2/3430 project v2/v2/project_1/project_1.runs/synth_1/runme.log 
+dismissDialog ("Starting Design runs"); // cb:I (bT:JFrame)
+// TclEventType: RUN_COMPLETED
+// [GUI Memory]: 128 mb (+5327kb) [00:12:32]
+// O:af (bT:JFrame): Synthesis Completed: addNotify
+// Elapsed time: 40 seconds
+selectButton (RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, O:af)
+dismissDialog ("Synthesis Completed"); // O:af (bT:JFrame)
+selectTree (PAResourceAtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 23); // w:Q (v:u, bT:JFrame)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run impl_1 
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream 
+// Tcl Message: [Mon Apr 16 19:38:58 2018] Launched impl_1... Run output will be captured here: D:/Profiles/Administrator/Desktop/v2/3430 project v2/v2/project_1/project_1.runs/impl_1/runme.log 
+selectTree (PAResourceAtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 23); // w:Q (v:u, bT:JFrame)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// [GUI Memory]: 135 mb (+7788kb) [00:12:39]
+selectTree (PAResourceAtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 23, false, false, false, false, true); // w:Q (v:u, bT:JFrame) - DOUBLE CLICK
+// Tcl Message: reset_run impl_1 
+// Tcl Message: reset_run impl_1 
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// cb:I (bT:JFrame):  Generate Bitstream : addNotify
+// cb:I (bT:JFrame):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream 
+// Tcl Message: [Mon Apr 16 19:39:00 2018] Launched impl_1... Run output will be captured here: D:/Profiles/Administrator/Desktop/v2/3430 project v2/v2/project_1/project_1.runs/impl_1/runme.log 
+// Elapsed time: 118 seconds
+selectButton (RDIResource.ProgressDialog_BACKGROUND, "Background"); // a:JButton (JPanel:JComponent, cb:I)
+selectButton (RDIResource.ProgressDialog_BACKGROUND, "Background"); // a:JButton (JPanel:JComponent, cb:I)
+selectCodeEditor ("v2.vhd", 70, 356); // aR:G (JPanel:JComponent, bT:JFrame)
+// [GUI Memory]: 138 mb (+2964kb) [00:14:39]
+selectCodeEditor ("Monitor", 360, 111); // K:aR (JPanel:JComponent, bT:JFrame)
+// Elapsed time: 34 seconds
+selectCodeEditor ("v2.vhd", 186, 250); // aR:G (JPanel:JComponent, bT:JFrame)
+selectCodeEditor ("v2.vhd", 282, 298); // aR:G (JPanel:JComponent, bT:JFrame)
+selectCodeEditor ("v2.vhd", 326, 278); // aR:G (JPanel:JComponent, bT:JFrame)
+selectCodeEditor ("v2.vhd", 267, 317); // aR:G (JPanel:JComponent, bT:JFrame)
+selectCodeEditor ("v2.vhd", 250, 350); // aR:G (JPanel:JComponent, bT:JFrame)
+selectCodeEditor ("v2.vhd", 188, 433); // aR:G (JPanel:JComponent, bT:JFrame)
+selectCodeEditor ("v2.vhd", 185, 399); // aR:G (JPanel:JComponent, bT:JFrame)
+selectCodeEditor ("v2.vhd", 241, 366); // aR:G (JPanel:JComponent, bT:JFrame)
+selectCodeEditor ("v2.vhd", 241, 366); // aR:G (JPanel:JComponent, bT:JFrame)
+// HOptionPane Warning: 'A background task is running. Please wait until it completes and try again. (Background Task is Running)'
+selectButton ((HResource) null, "OK"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, V:JDialog)
+selectCodeEditor ("v2.vhd", 98, 53); // aR:G (JPanel:JComponent, bT:JFrame)
+selectCodeEditor ("v2.vhd", 98, 53, false, false, false, false, true); // aR:G (JPanel:JComponent, bT:JFrame) - DOUBLE CLICK
+// HOptionPane Warning: 'A background task is running. Please wait until it completes and try again. (Background Task is Running)'
+// Elapsed time: 48 seconds
+selectButton ((HResource) null, "OK"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, V:JDialog)
+selectCodeEditor ("v2.vhd", 220, 394); // aR:G (JPanel:JComponent, bT:JFrame)
+selectCodeEditor ("v2.vhd", 215, 423); // aR:G (JPanel:JComponent, bT:JFrame)
+// HOptionPane Warning: 'A background task is running. Please wait until it completes and try again. (Background Task is Running)'
+selectButton ((HResource) null, "OK"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, V:JDialog)
+// HOptionPane Warning: 'A background task is running. Please wait until it completes and try again. (Background Task is Running)'
+selectButton ((HResource) null, "OK"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, V:JDialog)
+// HOptionPane Warning: 'A background task is running. Please wait until it completes and try again. (Background Task is Running)'
+selectButton ((HResource) null, "OK"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, V:JDialog)
+// [Engine Memory]: 666 mb (+794kb) [00:16:51]

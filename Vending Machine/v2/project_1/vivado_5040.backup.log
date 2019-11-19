@@ -1,0 +1,83 @@
+#-----------------------------------------------------------
+# Vivado v2013.4 (64-bit)
+# SW Build 353583 on Mon Dec  9 17:49:19 MST 2013
+# IP Build 208076 on Mon Dec  2 12:38:17 MST 2013
+# Start of session at: Mon Apr 16 19:26:16 2018
+# Process ID: 6264
+# Log file: D:/Profiles/Administrator/Desktop/v2/3430 project v2/v2/project_1/vivado.log
+# Journal file: D:/Profiles/Administrator/Desktop/v2/3430 project v2/v2/project_1\vivado.jou
+#-----------------------------------------------------------
+Attempting to get a license: Implementation
+Feature available: Implementation
+Loading parts and site information from C:/Xilinx/Vivado/2013.4/data/parts/arch.xml
+Parsing RTL primitives file [C:/Xilinx/Vivado/2013.4/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [C:/Xilinx/Vivado/2013.4/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+open_project {D:\Profiles\Administrator\Desktop\v2\3430 project v2\v2\project_1\project_1.xpr}
+INFO: [Project 1-313] Project file moved from 'D:/Profiles/Administrator/Desktop/v2/project_1' since last save.
+Scanning sources...
+Finished scanning sources
+open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:05 . Memory (MB): peak = 856.836 ; gain = 76.980
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Mon Apr 16 19:26:46 2018] Launched synth_1...
+Run output will be captured here: D:/Profiles/Administrator/Desktop/v2/3430 project v2/v2/project_1/project_1.runs/synth_1/runme.log
+[Mon Apr 16 19:26:46 2018] Launched impl_1...
+Run output will be captured here: D:/Profiles/Administrator/Desktop/v2/3430 project v2/v2/project_1/project_1.runs/impl_1/runme.log
+open_hw
+connect_hw_server -host localhost -port 60001
+INFO: [Xicom 50-2] Connecting to hw_server...
+INFO: [Xicom 50-1] Attempting to launch hw_server...
+INFO: [#UNDEF] 
+****** Xilinx hw_server v2013.4
+  **** Build date : Dec  9 2013-17:47:52
+    ** Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
+
+INFO: hw_server application started
+INFO: Use Ctrl-C to exit hw_server application
+
+INFO: [Labtools 27-109] Started Vivado Cse Server instance on port: 60001
+INFO: [Labtools 27-147] vcse_server: Connecting to hw_server...
+INFO: [Labtools 27-147] vcse_server: Connection established.
+INFO: [Labtools 27-147] vcse_server: Connecting to hw_server...
+INFO: [Labtools 27-147] vcse_server: Connection established.
+connect_hw_server: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 870.285 ; gain = 6.605
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210248657233]
+WARNING: [Labtoolstcl 44-199] No matching targets found on connected servers: localhost
+Resolution: If needed connect the desired target to a server and use command refresh_hw_server. Then rerun the get_hw_targets command.
+open_hw_target
+INFO: [Labtools 27-147] vcse_server: Connecting to hw_server...
+INFO: [Labtools 27-147] vcse_server: Connection established.
+set_property PROGRAM.FILE {D:/Profiles/Administrator/Desktop/v2/3430 project v2/v2/project_1/project_1.runs/impl_1/v1.bit} [lindex [get_hw_devices] 1]
+set_property PROBES.FILE {D:/Profiles/Administrator/Desktop/v2/3430 project v2/v2/project_1/project_1.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices] 1]
+current_hw_device [lindex [get_hw_devices] 1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 1]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+set_property PROGRAM.FILE {D:/Profiles/Administrator/Desktop/v2/3430 project v2/v2/project_1/project_1.runs/impl_1/v1.bit} [lindex [get_hw_devices] 1]
+program_hw_devices [lindex [get_hw_devices] 1]
+INFO: [Labtools 27-2154] Reading 4045647 bytes from file D:/Profiles/Administrator/Desktop/v2/3430 project v2/v2/project_1/project_1.runs/impl_1/v1.bit...
+INFO: [Labtools 27-32] Done pin status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 1]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+set_property PROGRAM.FILE {D:/Profiles/Administrator/Desktop/v2/3430 project v2/v2/project_1/project_1.runs/impl_1/v1.bit} [lindex [get_hw_devices] 1]
+program_hw_devices [lindex [get_hw_devices] 1]
+INFO: [Labtools 27-2154] Reading 4045647 bytes from file D:/Profiles/Administrator/Desktop/v2/3430 project v2/v2/project_1/project_1.runs/impl_1/v1.bit...
+INFO: [Labtools 27-32] Done pin status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 1]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs synth_1
+[Mon Apr 16 19:38:15 2018] Launched synth_1...
+Run output will be captured here: D:/Profiles/Administrator/Desktop/v2/3430 project v2/v2/project_1/project_1.runs/synth_1/runme.log
+reset_run impl_1
+launch_runs impl_1 -to_step write_bitstream
+[Mon Apr 16 19:38:58 2018] Launched impl_1...
+Run output will be captured here: D:/Profiles/Administrator/Desktop/v2/3430 project v2/v2/project_1/project_1.runs/impl_1/runme.log
+reset_run impl_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+
+reset_run impl_1
+launch_runs impl_1 -to_step write_bitstream
+[Mon Apr 16 19:39:00 2018] Launched impl_1...
+Run output will be captured here: D:/Profiles/Administrator/Desktop/v2/3430 project v2/v2/project_1/project_1.runs/impl_1/runme.log

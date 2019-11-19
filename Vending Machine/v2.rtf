@@ -1,0 +1,282 @@
+{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Calibri;}}
+{\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\sa200\sl276\slmult1\lang9\f0\fs22 ----------------------------------------------------------------------------------\par
+-- Company: \par
+-- Engineer: \par
+-- \par
+-- Create Date: 03/27/2018 04:48:18 PM\par
+-- Design Name: \par
+-- Module Name: v1 - Behavioral\par
+-- Project Name: \par
+-- Target Devices: \par
+-- Tool Versions: \par
+-- Description: \par
+-- \par
+-- Dependencies: \par
+-- \par
+-- Revision:\par
+-- Revision 0.01 - File Created\par
+-- Additional Comments:\par
+-- \par
+----------------------------------------------------------------------------------\par
+\par
+\par
+library IEEE;\par
+use IEEE.STD_LOGIC_1164.ALL;\par
+\par
+-- Uncomment the following library declaration if using\par
+-- arithmetic functions with Signed or Unsigned values\par
+--use IEEE.NUMERIC_STD.ALL;\par
+\par
+-- Uncomment the following library declaration if instantiating\par
+-- any Xilinx leaf cells in this code.\par
+--library UNISIM;\par
+--use UNISIM.VComponents.all;\par
+\par
+entity v1 is\par
+    Port ( reset : in bit;\par
+           clk : in STD_LOGIC;\par
+           one_in : in STD_LOGIC;\par
+           two_in : in STD_LOGIC;\par
+           five_in : in STD_LOGIC;\par
+           one_out : out STD_LOGIC;\par
+           two_out : out STD_LOGIC;\par
+           five_out : out STD_LOGIC;\par
+\tab        one_out2 : out STD_LOGIC;\par
+\tab\tab    two_out2 : out STD_LOGIC;\par
+\tab\tab    five_out2 : out STD_LOGIC;\par
+           collect_in : in STD_LOGIC_VECTOR (1 downto 0);\par
+           dispense : out STD_LOGIC_VECTOR (1 downto 0);   \par
+           cancel : in STD_LOGIC;\par
+           ssd : out STD_LOGIC_VECTOR (6 downto 0);\par
+           ssdcat : out STD_LOGIC\par
+);\par
+end v1;\par
+\par
+architecture Behavioral of v1 is\par
+type state_type is (\par
+\tab S0,\par
+\tab S1,\par
+\tab S2,\par
+\tab S3,\par
+\tab S4,\par
+\tab S5,\par
+\tab S6,\par
+\tab S7,\par
+\tab S8,\par
+\tab S9,\par
+\tab S10\par
+);\par
+signal clkout: bit;\par
+component clock_divider_1Hz\par
+port ( reset : in  bit;\par
+       clk_in : in  std_logic; -- you can als use bit\par
+       clk_out : out  bit );\par
+end component;\par
+signal state, next_state : state_type;\par
+variable x : integer := 0;\par
+begin\par
+G1: clock_divider_1Hz port map(reset, clk, clkout);\par
+state_transition : process(clkout, reset)\par
+begin\par
+\tab if reset ='1' then \par
+\tab\tab state <= S0;\par
+\tab else\par
+\tab\tab if clkout'event and clkout='1' then \par
+\tab\tab\tab state <= next_state;\par
+\tab\tab end if;\par
+\tab end if;\par
+end process;\par
+\par
+state_assignment : process(state, one_in, two_in, five_in, cancel, collect_in)\par
+begin \par
+\tab next_state <= state;\par
+\tab one_out <= '0';\par
+    two_out <= '0';\par
+    five_out <= '0';\par
+    one_out2 <= '0';\par
+    two_out2 <= '0';\par
+    five_out2 <= '0';\par
+    dispense <= "00";\par
+case(state) is\par
+\tab when S0 =>\par
+\tab     ssd<="1111110"; \par
+\tab\tab if one_in='1' then\par
+\tab\tab\tab next_state <= S1;\par
+\tab\tab elsif two_in='1' then\par
+\tab\tab\tab next_state <= S2;\par
+\tab\tab elsif five_in ='1' then\par
+\tab\tab\tab next_state <= S5;\par
+\tab\tab elsif cancel ='1' then\par
+        \tab next_state <= S0;\par
+\tab\tab else \tab\par
+            next_state <= S0;\par
+\tab\tab end if;\par
+\tab when S1 =>\par
+\tab    ssd<="0110000"; \par
+\tab\tab if one_in = '1' then\par
+\tab\tab\tab next_state <= S2;\par
+\tab\tab elsif two_in='1' then\par
+\tab\tab\tab next_state <= S3;\par
+\tab\tab elsif five_in ='1' then\par
+\tab\tab\tab next_state <= S6;\par
+\tab\tab elsif cancel ='1' then\par
+\tab\tab\tab one_out <= '1';\par
+        \tab next_state <= S0;\par
+\tab\tab else \tab\par
+\tab\tab\tab next_state <= S1;\par
+\tab\tab end if;\par
+\tab when S2 =>\par
+\tab    ssd<="1101101"; \par
+\tab\tab if one_in='1' then\par
+\tab\tab\tab next_state <= S3;\par
+\tab\tab elsif two_in='1' then\par
+\tab\tab\tab next_state <= S4;\par
+\tab\tab elsif five_in ='1' then\par
+\tab\tab\tab next_state <= S7;\par
+\tab\tab elsif cancel ='1' then\par
+            two_out <= '1';\par
+        \tab next_state <= S0;\par
+\tab\tab else \tab\par
+\tab\tab\tab next_state <= S2;\par
+\tab\tab end if;\par
+\tab when S3 =>\par
+\tab     ssd<="1111001"; \par
+\tab\tab if one_in='1' then\par
+\tab\tab\tab next_state <= S4;\par
+\tab\tab elsif two_in='1' then\par
+\tab\tab\tab next_state <= S5;\par
+\tab\tab elsif five_in ='1' then\par
+\tab\tab\tab next_state <= S8;\par
+\tab\tab elsif cancel ='1' then\par
+\tab\tab\tab one_out <= '1';\par
+            two_out <= '1';\par
+        \tab next_state <= S0;\tab\par
+\tab\tab else \tab\par
+\tab\tab\tab next_state <= S3;\par
+\tab\tab end if;\par
+\tab when S4 =>\par
+\tab     ssd<="0110011"; \par
+\tab\tab if one_in='1' then\par
+\tab\tab\tab next_state <= S5;\par
+\tab\tab elsif two_in='1' then\par
+\tab\tab\tab next_state <= S6;\par
+\tab\tab elsif five_in ='1' then\par
+\tab\tab\tab next_state <= S9;\par
+\tab\tab elsif cancel ='1' then\par
+            two_out2 <= '1';\par
+        \tab next_state <= S0;\par
+\tab\tab else \tab\par
+\tab\tab\tab next_state <= S4;\par
+\tab\tab end if;\par
+\tab when S5 =>\par
+\tab    ssd<="1011011"; \par
+\tab\tab if one_in='1' then\par
+\tab\tab\tab next_state <= S6;\par
+\tab\tab elsif two_in='1' then\par
+\tab\tab\tab next_state <= S7;\par
+\tab\tab elsif five_in ='1' then\par
+\tab\tab\tab next_state <= S10;\par
+\tab\tab elsif cancel ='1' then\par
+            five_out <= '1';\par
+        \tab next_state <= S0;\par
+\tab\tab elsif collect_in = "01" then\par
+\tab\tab\tab dispense <= "01"; \par
+\tab\tab\tab next_state <= S0;\par
+\tab\tab else \tab\par
+\tab\tab\tab next_state <= S5;\par
+\tab\tab end if;\par
+\tab when S6 =>\par
+\tab     ssd<="1011111"; \par
+\tab        if cancel ='1' then\par
+\tab\tab\tab one_out <= '1';\par
+            five_out <= '1';\par
+        \tab next_state <= S0;\par
+\tab\tab elsif collect_in = "01" then\par
+\tab        \tab one_out <= '1';\par
+\tab\tab\tab dispense <= "01";\par
+\tab\tab\tab next_state <= S0;\par
+\tab\tab elsif collect_in = "10" then\par
+\tab\tab     dispense <= "10";\tab\tab\par
+\tab\tab     next_state <= S0;\tab\par
+\tab\tab else\par
+\tab\tab\tab next_state <= S6;\par
+\tab\tab end if;\par
+\tab when S7 =>\par
+\tab      ssd<="1110000"; \par
+\tab\tab  if cancel ='1' then\par
+            two_out <= '1';\par
+            five_out <= '1';\par
+        \tab next_state <= S0;\par
+        elsif collect_in = "01" then\par
+            two_out <= '1';\par
+            dispense <= "01";\par
+            next_state <= S0;     \par
+        elsif collect_in = "10" then\par
+        \tab one_out <= '1';\par
+            dispense <= "10";\par
+            next_state <= S0;\par
+\tab\tab else\par
+\tab\tab\tab next_state <= S7;\par
+\tab\tab end if;\par
+\tab when S8 =>\par
+\tab    ssd<="1111111"; \par
+\tab\tab if cancel ='1' then\par
+\tab\tab\tab one_out <= '1';\par
+            two_out <= '1';\par
+            five_out <= '1';\par
+        \tab next_state <= S0;\par
+        elsif collect_in = "01" then\par
+            one_out <= '1';\par
+            two_out <= '1';\par
+            dispense <= "01";\par
+            next_state <= S0;\par
+        elsif collect_in = "10" then\par
+            two_out <= '1';\par
+            dispense <= "10";\par
+            next_state <= S0;\par
+\tab\tab else\par
+\tab\tab\tab next_state <= S8;\par
+\tab\tab end if;\par
+\tab when S9 =>\par
+\tab    ssd<="1111011"; \par
+\tab\tab if cancel ='1' then\par
+            two_out <= '1';\par
+            five_out <= '1';\par
+            one_out2 <= '1';\par
+            next_state <= S0;\par
+        elsif collect_in = "01" then\par
+            two_out2 <= '1';\par
+            dispense <= "01";\par
+            next_state <= S0;\par
+        elsif collect_in = "10" then\par
+            one_out <= '1';\par
+            two_out <= '1';\par
+            dispense <= "10";\par
+            next_state <= S0;\par
+\tab\tab else\par
+\tab\tab\tab next_state <= S9;\par
+\tab\tab end if;\par
+\tab when S10 =>\par
+\tab ssd<="1110111"; \par
+\tab\tab if cancel = '1' then\par
+\tab\tab\tab one_out <= '1';\par
+            two_out <= '1';\par
+            five_out <= '1';\par
+            one_out2 <= '1';\par
+        \tab next_state <= S0;\par
+        elsif collect_in = "01" then\par
+        \tab five_out <= '1';\par
+            dispense <= "01";\par
+            next_state <= S0;\par
+        elsif collect_in = "10" then\par
+        \tab two_out2 <= '1';\par
+            dispense <= "10";\par
+            next_state <= S0;\par
+\tab\tab else\par
+\tab\tab\tab next_state <= S10;\par
+\tab\tab end if;\par
+\tab end case;\par
+end process;\par
+end Behavioral;\par
+}
+ 

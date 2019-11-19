@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2013.4 (64-bit)
+# SW Build 353583 on Mon Dec  9 17:49:19 MST 2013
+# IP Build 208076 on Mon Dec  2 12:38:17 MST 2013
+# Start of session at: Sun Apr 15 16:55:53 2018
+# Process ID: 7004
+# Log file: D:/Profiles/Administrator/Desktop/v2/project_1/project_1.runs/impl_1/v1.rdi
+# Journal file: D:/Profiles/Administrator/Desktop/v2/project_1/project_1.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source v1.tcl -notrace

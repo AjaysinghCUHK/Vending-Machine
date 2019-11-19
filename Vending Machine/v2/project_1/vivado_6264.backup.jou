@@ -1,0 +1,11 @@
+#-----------------------------------------------------------
+# Vivado v2013.4 (64-bit)
+# SW Build 353583 on Mon Dec  9 17:49:19 MST 2013
+# IP Build 208076 on Mon Dec  2 12:38:17 MST 2013
+# Start of session at: Sun Apr 15 18:41:40 2018
+# Process ID: 5124
+# Log file: D:/Profiles/Administrator/Desktop/3430 project v2/v2/project_1/vivado.log
+# Journal file: D:/Profiles/Administrator/Desktop/3430 project v2/v2/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:\Profiles\Administrator\Desktop\3430 project v2\v2\project_1\project_1.xpr}

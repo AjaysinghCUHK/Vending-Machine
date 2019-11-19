@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2013.4 (64-bit)
+# SW Build 353583 on Mon Dec  9 17:49:19 MST 2013
+# IP Build 208076 on Mon Dec  2 12:38:17 MST 2013
+# Start of session at: Sun Apr 15 18:41:40 2018
+# Process ID: 5124
+# Log file: D:/Profiles/Administrator/Desktop/3430 project v2/v2/project_1/vivado.log
+# Journal file: D:/Profiles/Administrator/Desktop/3430 project v2/v2/project_1\vivado.jou
+#-----------------------------------------------------------
+Attempting to get a license: Implementation
+Feature available: Implementation
+Loading parts and site information from C:/Xilinx/Vivado/2013.4/data/parts/arch.xml
+Parsing RTL primitives file [C:/Xilinx/Vivado/2013.4/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [C:/Xilinx/Vivado/2013.4/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+open_project {D:\Profiles\Administrator\Desktop\3430 project v2\v2\project_1\project_1.xpr}
+INFO: [Project 1-313] Project file moved from 'D:/Profiles/Administrator/Desktop/v2/project_1' since last save.
+Scanning sources...
+Finished scanning sources
+open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 838.816 ; gain = 83.605
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Apr 15 18:42:24 2018...
